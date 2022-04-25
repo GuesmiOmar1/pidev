@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevomar.AfficherPublicationController">
+   <children>
+      <TableView fx:id="tableviewpub" layoutY="32.0" prefHeight="319.0" prefWidth="518.0">
+        <columns>
+          <TableColumn fx:id="titre" prefWidth="109.0" text="Titre" />
+          <TableColumn fx:id="descri" prefWidth="172.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button fx:id="SupprimerBtn" layoutX="42.0" layoutY="355.0" mnemonicParsing="false" onAction="#Supprimer" text="Suprrimer" />
+      <Button fx:id="ModifierBtn" layoutX="145.0" layoutY="355.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="31.0" prefWidth="98.0" text="Refresh" />
+      <Button fx:id="consulterBtn1" layoutX="259.0" layoutY="355.0" mnemonicParsing="false" onAction="#consulter" text="consulter" />
+   </children>
+</AnchorPane>
